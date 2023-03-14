@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    color: black;
+    background: linear-gradient(to right,
+    rgb(255, 255, 255),
+    #ffffff
+    );
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background: linear-gradient(to top,
+    black,
+    #000000
+    );
+}
+
+.img-logo {
+    border-radius: 2em;
+}
+
+
+.navbar .navbar-logo {
+    font-family: 'Russo One', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color: black;
+}
+
+.navbar .navbar-logo span {
+    color: white;
+}
+
+.navbar .navbar-nav a {
+    font-family: 'Russo One', sans-serif;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0 1rem;
+    position: relative;
+    left: 70%;
+}
+
+.navbar .navbar-nav a:hover {
+    color: white;
+}
+
+.navbar .navbar-nav a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid  white;
+    transform: scaleX(0);
+    transition: 0.3s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+    color: white;
+    margin: 0 0.5rem;
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+    color: #266163;
+}
+
+.navbar .navbar-extra a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid white;
+    transform: scaleX(0);
+    transition: 0.3s linear;
+}
+
+.navbar .navbar-extra a:hover::after {
+    transform: scaleX(0.5);
+}

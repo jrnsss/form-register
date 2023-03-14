@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: white;
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: black;
+}
+
+.img-logo {
+    border-radius: 2em;
+}
+
+
+.navbar .navbar-logo {
+    font-family: 'Russo One', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color:white;
+}
+
+.navbar .navbar-logo span {
+    color: white;
+}
+
+.navbar .navbar-nav a {
+    font-family: 'Russo One', sans-serif;
+    color:white;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0 1rem;
+    position: relative;
+    left: 70%;
+}
+
+.navbar .navbar-nav a:hover {
+    color: white;
+}
+
+.navbar .navbar-nav a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid  white;
+    transform: scaleX(0);
+    transition: 0.3s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+    color: white;
+    margin: 0 0.5rem;
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+    color: #266163;
+}
+
+.navbar .navbar-extra a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid white;
+    transform: scaleX(0);
+    transition: 0.3s linear;
+}
+
+.navbar .navbar-extra a:hover::after {
+    transform: scaleX(0.5);
+}
+
+/* navbar end */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+  }
+  
+  .img-left {
+    max-width: 25%;
+    margin-right: 30px;
+    /* opacity: 0; */
+    transform: translateX(-50px);
+    transition: all 0.5s ease;
+  }
+  
+  .img-right {
+    max-width: 25%;
+    margin-left: 25%;
+    /* opacity: 0; */
+    transform: translateX(50px);
+    transition: all 0.5s ease;
+  }
+  
+  .animate {
+    opacity: 0;
+    transform: translateX(0);
+  }
